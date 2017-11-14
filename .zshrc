@@ -89,6 +89,8 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
 --userconfig=$HOME/.cnpmrc"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias pc=proxychains4
 
 eval "$(rbenv init -)"
 
@@ -118,3 +120,10 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# OPAM configuration
+. /Users/mondo/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
