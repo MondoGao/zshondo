@@ -7,7 +7,8 @@ export ZSH=/Users/mondo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="bira"
+ZSH_CUSTOM=$HOME/Workspace/zshondo/custom
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +52,9 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm node colored-man-pages colorize history z yarn vi-mode sudo rbenv iterm2 docker docker-compose docker-machine)
+plugins=(colored-man-pages colorize copydir extract zsh-history-substring-search history fasd \
+  zsh-completions zsh-autosuggestions \
+  git npm node yarn vi-mode sudo rbenv docker docker-compose docker-machine)
 
 source $ZSH/oh-my-zsh.sh
 
